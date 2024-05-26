@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+header nav ul li a {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 1em;
+}
+
+header nav ul li a:hover {
+    font-style: italic;
+}
+
+header nav ul li{
+    list-style-type: none;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+header {
+    padding: 2%;
+    background-color: antiquewhite;
+}
+
+.btn-header{
+    padding: 0.5em;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    box-shadow: 2px 2px 5px darkgray;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Secciones */
+
+section {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Seccion Layout imagenes */
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 'areaUno areaUno imagenUno'
+                         'areaUno areaUno imagenDos'
+                         'imagenTres areaDos areaDos'
+                         'imagenCuatro areaDos areaDos';
+    gap: 1em;
+    padding: 2%;
+}
+
+.imagenes {
+    width: 100%;
+    height: 100%;
+}
+
+.imagenes:hover{
+    transform: scale(1.2,1.2);
+    transition: all 1s ease-in;
+}
+
+.item-uno{
+    grid-area: areaUno;
+}
+
+.item-dos{
+    grid-area: imagenUno;
+}
+
+.item-tres{
+    grid-area: imagenDos;
+}
+
+.item-cuatro{
+    grid-area: areaDos;
+}
+
+.item-cinco{
+    grid-area: imagenTres;
+}
+
+.item-seis{
+    grid-area: imagenCuatro;
+}
+
+/* Seccion 1 */
+h1 {
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    max-width: 80%;
+}
+
+
+
+/* Seccion 2 */
+h2{
+    font-size: 2em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section ol li{
+    margin-left: 2%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 1em;
+}
+
+div.requerimientos p {
+    margin-bottom: 1em;
+}
+
+section a button {
+    background-color: antiquewhite;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    margin-top: 2%;
+}
+
+section a button:hover{
+    background-color: lightblue;
+    color: blueviolet;
+}
+
+#requisitos{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 1.5em;
+    margin: 0 3%;
+}
+
+.titulo{
+    grid-area: 1 / 2 / 2 / 6;
+    text-align: center;
+}
+
+.imagen{
+    grid-area: 2 / 1 / 5 / 4;
+    width: 100%;
+    border-radius: 2%;
+    border: 1px solid darkgray;
+}
+
+.requerimientos{
+    grid-area:  1 / 4 / 7 / 7;
+}
+
+/* Seccion 3 */
+.preguntas{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1em;
+    margin: 5% 2%;
+}
+
+.image{
+    grid-area: 1 / 1 / 3 / 3;
+    width: 100%;
+    border-radius: 2%;
+    border: 1px solid darkgray;
+}
+
+.preguntas-frecuentes{
+    grid-area: 1 / 3 / 3 / 5;
+}
+
+div.preguntas-frecuentes p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+}
+
+.lista-preguntas{
+    width: 100%;
+}
+
+.p-preguntas{
+    font-weight: bold;
+    color: darksalmon;
+}
+
+/* Seccion 4 */
+span {
+    color: darksalmon;
+    font-weight: bold;
+}
+
+button {
+    background-color: antiquewhite;
+    padding: 0.5%;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+}
+
+button:hover{
+    background-color: lightblue;
+    color: blueviolet;
+}
+
+.btn-familias{
+    margin-top: 2%;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 5%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h2 {
+    margin: 2% 0;
+}
+
+footer p {
+    font-family:'Courier New', Courier, monospace;
+    color: black;
+    font-size: 1em;
+}
+
+/* FORMULARIO */
+.bd-color{
+    background-color: #c3dfd8;
+}
+
+form p {
+    font-size: 1.5em;
+    font-family: 'League Spartan';
+    color: #275d76;
+    margin: 2% 0;
+    text-align: start;
+    font-weight: 500;
+}
+
+.imagen-formulario{
+    width: 100%;
+}
+
+hr{
+    margin: 5% 0;
+}
+
+.btn-enviar{
+    color: antiquewhite;
+    background-color: #275d76;
+    padding: 0.5% 2%;
+    border-radius: 5px;
+}

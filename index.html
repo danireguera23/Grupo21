@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="imagenes/logo(1).ico" type="image/x-icon">
+
+    <!-- Titulo de la pagina-->
+    <title>PetHaven - Pagina principal</title>
+
+</head>
+<body>
+    
+    <!-- HEADER -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#requisitos">Requisitos de adopción</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#preguntas">Preguntas frecuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#familias">Familias</a>
+            </li>
+          </ul>
+        
+        </div>
+        <button class="btn-header">Iniciar Sesión</button>
+      </div>
+    </nav>
+  </header>
+    
+
+    <!-- Seccion 1 = NOSOTROS -->
+    <section id ="nosotros">
+        <h1>Sobre Nosotros</h1>
+        <p>En <span>PetHaven</span> conectamos humanos con su mascota.Nuestro compromiso es conectar animales necesitados con personas y familias dispuestas a brindarles una segunda oportunidad.Somos un equipo dedicado de amantes de los animales,voluntarios y profesionales que trabajan incansablemente para rescatar,rehabilitar y encontrar hogares permanentes para perros y gatos.Creemos en la importancia de educar a la comunidad sobre la responsabilidad de tener una mascota,así como promover la esterilización y castración para controlar la población animal.</p>
+    </section>
+
+    <!-- Div imagen = layout de imagenes -->
+    <div class="grid-container">
+        <div class="item-uno">
+            <img class="imagenes" src="imagenes/perro-marron.jpg" alt="perro marron">
+        </div>
+        <div class="item-dos">
+            <img class="imagenes" src="imagenes/gatos.jpg" alt="gatos bebe">
+        </div>
+        <div class="item-tres">
+            <img class="imagenes" src="imagenes/perro-blanco-y-negro.jpg" alt="perro blanco y negro">
+        </div>
+        <div class="item-cuatro">
+            <img class="imagenes" src="imagenes/gato-naranja.jpg" alt="gato naranja">
+        </div>
+        <div class="item-cinco">
+            <img class="imagenes" src="imagenes/gato-peludo.jpg" alt="gato gris peludo">
+        </div>
+        <div class="item-seis">
+            <img class="imagenes" src="imagenes/perros.jpg" alt="perros grises">
+        </div>
+    </div>
+
+    <!-- Seccion 2 = Requisitos de adopcion-->
+    <section id ="requisitos">
+        <h2 class="titulo">¿Con ganas de sumar un integrante a tu familia?</h2>
+        <img class="imagen" src="imagenes/cachorros.jpg" alt="perros bebe">
+      <div class="requerimientos">
+        <p>Requisitos para adoptar</p>
+        <ol>
+            <li>Ser mayor de 21 años.</li>
+            <li>Amar a las mascotas y poder dedicarle el tiempo que necesite.</li>
+            <li>Querer sumar un integrante a tu vida por el resto de la suya,sin importar los cambios que se presenten</li>
+            <li>Estar bien predispuesto: te pedimos cargues tu solicitud,realices una entrevista con el especialista y respondas a nuestro contacto.</li>
+            <li>Comprometerse con el cuidado,la salud y la castración de la mascota.</li>
+        </ol>
+        <a href="formulario.html" target="_blank">
+          <button>Formulario de adopción</button>
+        </a>
+      </div>
+      
+        
+
+    </section>
+
+    <!-- Seccion 3 = PREGUNTAS FRECUENTES -->
+    <section id ="preguntas">
+        <div class="preguntas">
+        <img class="image" src="imagenes/gatitos.jpg" alt="gatos abrazados">
+        <div class="preguntas-frecuentes">
+            <h2>Preguntas frecuentes sobre adopción de mascotas</h2>
+            <p>En <span>PetHaven</span> sabemos la importancia de que no haya ningún animal sin familia y por eso apoyamos y ayudamos a rescatistas y fundaciones todos los días para lograrlo.</p>
+            <p>Si estas pensando en sumar un amigo peludo tenés que saber el compromiso que esto implica.No sólo será tu compañía sino un integrante más de la familia.Por lo que te recomendamos planifiques bien su llegada,asegúrate que todos estén de acuerdo y que en tu edificio o casa se permitan mascotas.Tené en cuenta los gastos mensuales relacionados,cuidados generales que necesitará para que se encuentre saludable y cómodo y con quién dejarlo en caso de salir de vacaciones.</p>
+            <p class="p-preguntas">Te dejamos acá un resumen de las preguntas que recibimos siempre así te ayudamos a prepararte en lo que se viene</p>
+        </div>
+        </div>
+        <!-- Lista desplegable de preguntas frecuentes -->
+        <div class="accordion lista-preguntas" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  ¿De dónde provienen las mascotas que están publicadas en ésta web?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Todas las mascotas que recibimos en nuestras tiendas son rescatadas. Son animales que se encontraban en situaciones de calle, abandono o maltrato. Gracias al trabajo de nuestro equipo, fundaciones y rescatistas logramos ayudarlas a recuperarse brindándoles un hogar de tránsito y toda la atención de especialistas. Estas mascotas ya estàn preparadas para iniciar una adaptaciòn y poder integrar una nueva familia. 
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  ¿Es necesario completar todo el formulario y luego hacer una entrevista telefónica?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Sí, es necesario y obligatorio. Es nuestro deber proteger a las mascotas. Adoptarlas es asumir un compromiso de por vida. Son animales que han sufrido situaciones complejas y que a través del cuidado y amor tanto de nuestro equipo como de los rescatistas involucrados logramos reinsertarlos y prepararlos para volver a integrar una familia. Tenemos que asegurarnos todos que son el Match ideal, que tanto la mascota se adapta a las condiciones de vida de la nueva familia como la familia a las características de las mascotas. 
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  ¿Cómo me preparo para la llegada de mi mascota?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Primero tenés que saber que las mascotas necesitan un tiempo de adaptación, para conocerte y conocer a todos los integrantes de la familia. Le va a llevar un tiempo reconocersu nuevo hogar, así que paciencia, con amor pronto se sentirá cómoda. Es importante que te asesores con un veterinario para aprender sobre vacunas, cuál es el mejor plan de desparasitación y pueda recomendarte sobre la alimentación adecuada para ella.
+                    Asegurate de contar con los elementos básicos para que esté cómoda: una cuchita o colchoneta donde dormir, un platito para comer y tomar agua, una chapita o collar con tus datos y su nombre, y, si es un gatito piedritas y litera. 
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    ¿Cuáles son los cuidados que debe recibir mi mascota?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Desparasitación, Vacunación, Alimentación. Todos procesos con los que te irás familiarizando a lo largo de la vida de tu amigo peludo. Es muy importante que te acerques a un veterinario que pueda recomendarte y enseñarte sobre las vacunas que necesita, cuándo aplicarlas, cómo realizar una correcta desparasitación, según peso, hábitos, edad, y qué alimento cubre las necesidades de tu mascota. 
+                  </div>
+                </div>
+              </div>
+          </div>
+
+    </section>
+
+    <!-- Seccion 4 = Historias de familias -->
+    <section id ="familias">
+        <h2>Familias PetHaven</h2>
+        <p>Gracias a nuestra campaña de Adopción Responsable estas familias reciben <span>#AmorPuro</span></p>
+        <img src="imagenes/mascotas2.jpg" alt="gato y perro juntos">
+        <button class="btn-familias" type="submit">¡Contanos tu historia!</button>
+    </section>
+
+    <!-- Seccion 5 = FOOTER -->
+    <footer>
+        <h2>Contactanos</h2>
+        <p>Atención Teléfonica: 0810-220-2345</p>
+        <p>Atención Whatsapp: +54-911-6702-6320</p>
+        <p>Lunes a Sábados de 9 a 21 hs</p>
+        <p>Domingos de 10 a 20 hs</p>
+
+    </footer>
+
+    <!-- SCRIPT JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
