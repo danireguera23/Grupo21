@@ -33,13 +33,7 @@ header nav ul{
     width: 80%;
     align-items: center;
 }
-/*
-header nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-}
-*/
+
 header {
     padding: 2%;
     background-color: #F3F2EC;
