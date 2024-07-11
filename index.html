@@ -16,6 +16,14 @@
     <!-- Titulo de la pagina-->
     <title>PetHaven - Pagina principal</title>
 
+    <!-- FONTS -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+    </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap');
+    </style>
+
 </head>
 <body>
     
@@ -24,6 +32,7 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarNav">
+          <h1>PetHaven</h1>
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#nosotros">Nosotros</a>
@@ -40,19 +49,34 @@
           </ul>
         
         </div>
-        <button class="btn-header">Iniciar Sesión</button>
+        <button class="btn-header">Iniciar sesión</button>
       </div>
     </nav>
   </header>
     
+    
+    <!-- Seccion principal -->
+     <section class="grid-container">
+       <div class="item1">
+        <p class="p1">Adopta Felicidad</p>
+        <p class="p2">Encuentra un compañero</p>
+       </div>
+       <div class="item2">
+        <img src="imagenes/gato-naranja.jpg" alt="gato naranja">
+       </div>
+       <div class="item3">
+        <img src="imagenes/perros.jpg" alt="perros grises">
+       </div>
+     </section>
 
     <!-- Seccion 1 = NOSOTROS -->
     <section id ="nosotros">
-        <h1>Sobre Nosotros</h1>
+        <h2>Sobre Nosotros</h2>
+        <p class="p3">Nuestra misión</p>
         <p>En <span>PetHaven</span> conectamos humanos con su mascota.Nuestro compromiso es conectar animales necesitados con personas y familias dispuestas a brindarles una segunda oportunidad.Somos un equipo dedicado de amantes de los animales,voluntarios y profesionales que trabajan incansablemente para rescatar,rehabilitar y encontrar hogares permanentes para perros y gatos.Creemos en la importancia de educar a la comunidad sobre la responsabilidad de tener una mascota,así como promover la esterilización y castración para controlar la población animal.</p>
     </section>
 
-    <!-- Div imagen = layout de imagenes -->
+    <!-- Div imagen = layout de imagenes 
     <div class="grid-container">
         <div class="item-uno">
             <img class="imagenes" src="imagenes/perro-marron.jpg" alt="perro marron">
@@ -73,9 +97,10 @@
             <img class="imagenes" src="imagenes/perros.jpg" alt="perros grises">
         </div>
     </div>
-
+-->
     <!-- Seccion 2 = Requisitos de adopcion-->
-    <section id ="requisitos">
+    <section id="requisitos">
+    <div class="requisitos">
         <h2 class="titulo">¿Con ganas de sumar un integrante a tu familia?</h2>
         <img class="imagen" src="imagenes/cachorros.jpg" alt="perros bebe">
       <div class="requerimientos">
@@ -91,17 +116,17 @@
           <button>Formulario de adopción</button>
         </a>
       </div>
-      
+    </div>
         
 
     </section>
 
     <!-- Seccion 3 = PREGUNTAS FRECUENTES -->
     <section id ="preguntas">
+      <h2 class="titulo-preguntas">Preguntas frecuentes sobre adopción de mascotas</h2>
         <div class="preguntas">
         <img class="image" src="imagenes/gatitos.jpg" alt="gatos abrazados">
         <div class="preguntas-frecuentes">
-            <h2>Preguntas frecuentes sobre adopción de mascotas</h2>
             <p>En <span>PetHaven</span> sabemos la importancia de que no haya ningún animal sin familia y por eso apoyamos y ayudamos a rescatistas y fundaciones todos los días para lograrlo.</p>
             <p>Si estas pensando en sumar un amigo peludo tenés que saber el compromiso que esto implica.No sólo será tu compañía sino un integrante más de la familia.Por lo que te recomendamos planifiques bien su llegada,asegúrate que todos estén de acuerdo y que en tu edificio o casa se permitan mascotas.Tené en cuenta los gastos mensuales relacionados,cuidados generales que necesitará para que se encuentre saludable y cómodo y con quién dejarlo en caso de salir de vacaciones.</p>
             <p class="p-preguntas">Te dejamos acá un resumen de las preguntas que recibimos siempre así te ayudamos a prepararte en lo que se viene</p>
@@ -163,11 +188,11 @@
     </section>
 
     <!-- Seccion 4 = Historias de familias -->
-    <section id ="familias">
+    <section id="familias">
         <h2>Familias PetHaven</h2>
         <p>Gracias a nuestra campaña de Adopción Responsable estas familias reciben <span>#AmorPuro</span></p>
         <img src="imagenes/mascotas2.jpg" alt="gato y perro juntos">
-        <button class="btn-familias" type="submit">¡Contanos tu historia!</button>
+        <button class="btn-familias">¡Acceso exclusivo para empleados!</button>
     </section>
 
     <!-- Seccion 5 = FOOTER -->

@@ -4,11 +4,18 @@
 }
 
 /* HEADER */
+header nav div.container-fluid div.collapse h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    color: #2F5F48;
+}
 
-header nav ul li a {
+header nav div.container-fluid div.collapse ul li a {
     text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
-    color: black;
+    font-family: 'Wix Madefor Display',sans-serif;
+    color: #2F5F48;
+    font-weight: 400;
     font-size: 1em;
 }
 
@@ -26,107 +33,122 @@ header nav ul{
     width: 80%;
     align-items: center;
 }
-
+/*
 header nav {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
 }
-
+*/
 header {
     padding: 2%;
-    background-color: antiquewhite;
+    background-color: #F3F2EC;
+    border-bottom: 1px solid #2F5F48;
 }
 
 .btn-header{
     padding: 0.5em;
-    background-color: antiquewhite;
+    background-color: #2F5F48;
+    color: #F3F2EC;
     border-radius: 5px;
-    border: 1px solid darkgray;
-    box-shadow: 2px 2px 5px darkgray;
-    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #2F5F48;
+    font-size: 1em;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+.btn-header:hover{
+    background-color: #F3F2EC;
+    color: #2F5F48;
+    border: 1px solid #2F5F48;
 }
 
 /* Secciones */
 
 section {
-    margin-top: 5%;
+    padding-top: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #F3F2EC;
 }
 
-/* Seccion Layout imagenes */
-
+/* Seccion principal */
 .grid-container{
+    background-color: #F3F2EC;
     display: grid;
-    grid-template-areas: 'areaUno areaUno imagenUno'
-                         'areaUno areaUno imagenDos'
-                         'imagenTres areaDos areaDos'
-                         'imagenCuatro areaDos areaDos';
+    grid-template-areas: 'texto texto image image image'
+                         'image2 image2 image image image';
     gap: 1em;
-    padding: 2%;
+    padding: 0 2% 6% 2%;
 }
 
-.imagenes {
-    width: 100%;
-    height: 100%;
+.item1{
+    grid-area: texto;
 }
 
-.imagenes:hover{
-    transform: scale(1.2,1.2);
-    transition: all 1s ease-in;
+.item2{
+    grid-area: image;
 }
 
-.item-uno{
-    grid-area: areaUno;
+.item3{
+    grid-area: image2;
 }
 
-.item-dos{
-    grid-area: imagenUno;
+.p1{
+    color: #2F5F48;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 4em;
 }
 
-.item-tres{
-    grid-area: imagenDos;
+.p2{
+    color: #2F5F48;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
 }
 
-.item-cuatro{
-    grid-area: areaDos;
-}
-
-.item-cinco{
-    grid-area: imagenTres;
-}
-
-.item-seis{
-    grid-area: imagenCuatro;
-}
 
 /* Seccion 1 */
-h1 {
-    font-size: 3em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+section#nosotros h2 {
+    font-size: 4em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #2F5F48;
+}
+
+.p3{
+    color: #2F5F48;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 1.5em;
 }
 
 p {
     font-size: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
     text-align: center;
     max-width: 80%;
+    color: #2F5F48;
 }
 
-
+span{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
 
 /* Seccion 2 */
-h2{
-    font-size: 2em;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.titulo{
+    font-size: 3em;
+    font-family:'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    color: #2F5F48;
 }
 
 section ol li{
     margin-left: 2%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
     margin-bottom: 1em;
+    color: #2F5F48;
 }
 
 div.requerimientos p {
@@ -134,19 +156,22 @@ div.requerimientos p {
 }
 
 section a button {
-    background-color: antiquewhite;
+    background-color: #2F5F48;
     padding: 0.5em;
     border-radius: 5px;
-    border: 1px solid darkgray;
+    border: 1px solid #2F5F48;
     margin-top: 2%;
+    color: #F3F2EC;
 }
 
 section a button:hover{
-    background-color: lightblue;
-    color: blueviolet;
+    background-color: #F3F2EC;
+    color: #2F5F48;
+    border: 1px solid #2F5F48;
 }
 
-#requisitos{
+.requisitos{
+    background-color: #F3F2EC;
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(4,1fr);
@@ -155,7 +180,7 @@ section a button:hover{
 }
 
 .titulo{
-    grid-area: 1 / 2 / 2 / 6;
+    grid-area: 1 / 1 / 2 / 7;
     text-align: center;
 }
 
@@ -167,7 +192,7 @@ section a button:hover{
 }
 
 .requerimientos{
-    grid-area:  1 / 4 / 7 / 7;
+    grid-area:  2 / 4 / 7 / 7;
 }
 
 /* Seccion 3 */
@@ -190,8 +215,15 @@ section a button:hover{
     grid-area: 1 / 3 / 3 / 5;
 }
 
+.titulo-preguntas{
+    color: #2F5F48;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+}
+
 div.preguntas-frecuentes p{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
     font-size: 1em;
 }
 
@@ -200,36 +232,51 @@ div.preguntas-frecuentes p{
 }
 
 .p-preguntas{
-    font-weight: bold;
-    color: darksalmon;
+    font-weight: 600;
+    color: #2F5F48;
 }
 
 /* Seccion 4 */
+section#familias{
+    padding-bottom: 10%;
+}
+
+section#familias h2{
+    color: #2F5F48;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4em;
+    font-weight: 600;
+}
+
 span {
-    color: darksalmon;
-    font-weight: bold;
+    color: #2F5F48;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
 }
 
 button {
-    background-color: antiquewhite;
+    background-color: #2F5F48;
     padding: 0.5%;
     border-radius: 5px;
-    border: 1px solid darkgray;
+    color: #F3F2EC;
+    border: 1px solid #2F5F48;
 }
 
 button:hover{
-    background-color: lightblue;
-    color: blueviolet;
+    background-color: #F3F2EC;
+    color: #2F5F48;
+    border: 1px solid #2F5F48;
 }
 
 .btn-familias{
     margin-top: 2%;
+    border-radius: 5px;
 }
 
 /* FOOTER */
 footer {
-    margin-top: 5%;
-    background-color: antiquewhite;
+    padding: 2% 0;
+    background-color: #2F5F48;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -237,14 +284,18 @@ footer {
 
 footer h2 {
     margin: 2% 0;
+    color: #F3F2EC;
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
 footer p {
-    font-family:'Courier New', Courier, monospace;
-    color: black;
+    font-family:'Wix Madefor Display', sans-serif;
+    color: #F3F2EC;
     font-size: 1em;
 }
-
+*/
 /* FORMULARIO */
 .bd-color{
     background-color: #c3dfd8;
